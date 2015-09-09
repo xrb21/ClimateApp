@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pandawa.xrb21.climateapp.MainActivity"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Select a City"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/spCity"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tbCuaca"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TableRow
+            android:id="@+id/TableRow091"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#333"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/tvKota"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="Tanggal"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAverageDay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:paddingRight="5dp"
+                android:text="Saldo"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAverageVariant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:paddingRight="5dp"
+                android:text="Saldo"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
